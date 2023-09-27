@@ -22,4 +22,19 @@ public class TestCalcolatrice {
     public void testMoltiplicazione(){
         assertTrue(calcolatrice.moltiplicazione(10,2)==20, "moltiplicazione corretta");
     }
+
+    @Test
+    public void testSottrazione(){
+        assertTrue(calcolatrice.sottrazione(5,3)==2, "sottrazione corretta");
+    }
+
+    @Test
+    public void testDivisione(){
+        assertTrue(calcolatrice.divisione(10,2)==5, "divisione corretta");
+    }
+
+    @Test
+    public void testDivisionePerZero(){
+        assertTrue(calcolatrice.divisione(10,0)==0, "divisione corretta");
+    }
 }
